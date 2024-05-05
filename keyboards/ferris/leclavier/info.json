@@ -15,7 +15,8 @@
         "mousekey": true,
 	"unicode": false,
         "command": false,
-        "console": true
+        "console": true,
+	"rgblight": true
     },
     "matrix_pins": {
         "direct": [
@@ -40,7 +41,19 @@
 		    ["GP9",  "GP8",  null,     null,     null  ]
                 ]
             }
-        }
+        },
+	"transport": {
+            "sync": {
+            }
+	}
+    },
+    "rgblight": {
+	    "led_count": 1,
+	    "driver": "ws2812"
+    },
+    "ws2812": {
+	    "pin": 25,
+	    "driver": "vendor"	
     },
     "community_layouts": ["split_3x5_2"],
     "layouts": {
